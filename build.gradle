@@ -45,6 +45,9 @@ dependencies {
 
 	// Spring Boot Devtools 추가
 	compileOnly("org.springframework.boot:spring-boot-devtools")
+
+	// thymeleaf-layout-dialect
+	implementation('nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect')
 }
 
 tasks.named('test') {

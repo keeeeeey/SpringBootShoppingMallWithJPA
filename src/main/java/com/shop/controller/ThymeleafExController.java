@@ -86,4 +86,20 @@ public class ThymeleafExController {
         return "thymeleafEx/thymeleafEx05";
     }
 
+    @GetMapping(value = "ex06")
+    public String thymeleafExample06(Model model) {
+        return "thymeleafEx/thymeleafEx06";
+    }
+
+    @GetMapping(value = "ex07")
+    public String thymeleafExample07(String param1, String param2, Model model) {
+        model.addAttribute("param1", param1);
+        model.addAttribute("param2", param2);
+        return "thymeleafEx/thymeleafEx07";
+    }
+
+    @GetMapping(value = "ex08")
+    public String thymeleafExample08() {
+        return "thymeleafEx/thymeleafEx08";
+    }
 }

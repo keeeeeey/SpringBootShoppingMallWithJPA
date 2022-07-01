@@ -1,0 +1,30 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+#    h2 setting
+#    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:shop
+#    username: sa
+#    password:
+
+#    MySQL setting
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shop?serverTimezone=UTC
+    username: root
+    password: kp23156385@
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        default_batch_fetch_size: 1000
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    open-in-view: false
+
+logging.level:
+  org.hibernate.SQL: trace

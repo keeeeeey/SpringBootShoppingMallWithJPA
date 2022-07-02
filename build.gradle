@@ -54,6 +54,12 @@ dependencies {
 
 	// Validation
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	// 스프링 시큐리티 테스트
+	testImplementation group: 'org.springframework.security', name: 'spring-security-test', version: '5.5.1'
+
+	// thymeleaf-extras-springsecurity5
+	implementation group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5', version: '3.0.4.RELEASE'
 }
 
 tasks.named('test') {

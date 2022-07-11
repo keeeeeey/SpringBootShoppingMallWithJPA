@@ -39,9 +39,9 @@ spring:
       maxFileSize: 20MB
       maxRequestSize: 100MB
 
-itemImgLocation: Users/kimkiyun/Desktop/shop/item
+itemImgLocation: /Users/kimkiyun/Desktop/shop/item
 
-uploadPath: file:///Users/kimkiyun/Desktop/shop/
+uploadPath: file:////Users/kimkiyun/Desktop/shop/
 
 logging.level:
   org.hibernate.SQL: trace
